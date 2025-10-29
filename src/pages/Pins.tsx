@@ -86,11 +86,11 @@ const [pickIndex, setPickIndex] = useState<number | null>(null);
   const isCorrect = currentCode === TARGET;
   const [solved, setSolved] = useState(false);
 
-  function fireToast(msg: string) {
-    setToast(msg);
-    if (toastTimer.current) window.clearTimeout(toastTimer.current);
-    toastTimer.current = window.setTimeout(() => setToast(null), 2400);
-  }
+  //function fireToast(msg: string) {
+  //  setToast(msg);
+  //  if (toastTimer.current) window.clearTimeout(toastTimer.current);
+  //  toastTimer.current = window.setTimeout(() => setToast(null), 2400);
+ // }
 
   useEffect(() => {
     return () => {

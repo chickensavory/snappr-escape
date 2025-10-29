@@ -78,8 +78,6 @@ useEffect(() => {
 
 
 
-  const isCorrect = useMemo(() => picked === CORRECT, [picked]);
-
   function pushLog(html: string) {
     setLog(prev => [...prev, html]);
   }
