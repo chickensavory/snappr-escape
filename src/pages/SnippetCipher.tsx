@@ -7,8 +7,8 @@ export default function SnippetCipherConsole() {
   const navigate = useNavigate();
   const [value, setValue] = useState("");
   const [busy, setBusy] = useState(false);
-  const [failCount, setFailCount] = useState(0);
-  const [hintLevel, setHintLevel] = useState(0);
+  const [, setFailCount] = useState(0);
+  const [, setHintLevel] = useState(0);
   const [lines, setLines] = useState<string[]>(() => [
     'Initializing...<br/>',
     '<span class="green">0.0002ms ok!</span><br/>',
