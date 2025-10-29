@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const EXPECTED = "center=true; padding=08; props<=1; text=forbidden;";
 const ENCODED = "fhqwhu=wuxh; sddglqj=08; surtv<=1; whaw=iruelgghq;";

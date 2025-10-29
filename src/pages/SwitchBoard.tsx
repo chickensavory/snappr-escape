@@ -1,17 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-/**
- * Puzzle 6 — Style Surface Switchboard (SURFACE) — Earn KEY-6
- * Principle: Style Consistency — match background material; plate/container rules;
- *            don’t place food straight on the background.
- *
- * Ref: pale oak, overhead, plate (not container)
- * SURFACE: [oak] [stone] [laminate]
- * SERVEWARE: [plate] [container]
- * Correct: oak + plate
- */
-
 type Surface = "oak" | "stone" | "laminate";
 type Serveware = "plate" | "container";
 
