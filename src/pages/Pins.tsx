@@ -80,7 +80,7 @@ export default function PinHeistPuzzle() {
 const [pickIndex, setPickIndex] = useState<number | null>(null);
   const [dragIndex, setDragIndex] = useState<number | null>(null);
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
-  const [toast, setToast] = useState<string | null>(null);
+  const [toast] = useState<string | null>(null);
   const toastTimer = useRef<number | null>(null);
   const currentCode = useMemo(() => lettersOf(tiles), [tiles]);
   const isCorrect = currentCode === TARGET;

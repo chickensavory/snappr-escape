@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const EXPECTED = "center=true; padding=08; props<=1; text=forbidden;";
 const ENCODED = "fhqwhu=wuxh; sddglqj=08; surtv<=1; whaw=iruelgghq;";
@@ -23,8 +23,6 @@ export default function SnippetCipherConsole() {
 
   const outputRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
-
-  const ok = useMemo(() => value.trim() === EXPECTED, [value]);
 
   useEffect(() => {
     const el = outputRef.current;
